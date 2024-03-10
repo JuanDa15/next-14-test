@@ -6,6 +6,7 @@ import RevenueChart from "../ui/dashboard/revenue-chart"
 import { lusitana } from "../ui/fonts"
 import { LatestInvoicesSkeleton, RevenueChartSkeleton } from "../ui/skeletons"
 
+
 export default async function Page (): Promise<JSX.Element> {
   const { numberOfCustomers, numberOfInvoices, totalPaidInvoices, totalPendingInvoices } = await fetchCardData()
   return (
